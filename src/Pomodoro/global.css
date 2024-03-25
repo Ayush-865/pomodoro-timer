@@ -1,0 +1,64 @@
+:root {
+  --lightgrey: #cacaca;
+  --faintgrey: #282828;
+  --medgrey: #3b3b3b;
+  --darkgrey: #202020;
+
+  --light-work: #cf4547;
+  --dark-work: #50191a;
+
+  --light-break: #e2d34e;
+  --dark-break: #836f40;
+
+  --light-longBreak: #8df37a;
+  --dark-longBreak: #214a19;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+}
+
+body {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  background: #111;
+  color: var(--medgrey);
+}
+
+h1,
+h2 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  color: var(--lightgrey);
+  text-transform: lowercase;
+}
+
+a {
+  color: var(--lightred);
+}
+
+.noselect {
+  /* noselect: https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (max-width: 780px) {
+  body {
+    font-size: 15px;
+  }
+}
